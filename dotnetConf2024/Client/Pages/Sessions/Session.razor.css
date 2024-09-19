@@ -1,0 +1,33 @@
+﻿::deep .footnote {
+    color: gray !important;
+}
+    ::deep .footnote a:hover {
+        color: mediumpurple;
+    }
+
+/*------------------------
+  Schedule Table Section
+-------------------------*/
+
+.schedule-table-tab .schedule-table-content table tbody tr td.event-time {
+    width: 140px;
+    color: #f44949;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.schedule-table-tab .nav-tabs .nav-item {
+    border-right: 1px solid #e7e7e8;
+    width: 50%;
+    text-align: center;
+}
+
+    .schedule-table-tab .nav-tabs .nav-item.active {
+        background-image: -o-linear-gradient(330deg, #A08BE8 0%, #321a8b 100%), -o-linear-gradient(330deg, #A08BE8 0%, #321a8b 100%);
+        background-image: linear-gradient(120deg, #A08BE8 0%, #321a8b 100%), linear-gradient(120deg, #A08BE8 0%, #321a8b 100%);
+    }
+
+        .schedule-table-tab .nav-tabs .nav-item.active .nav-link {
+            border-color: #e7e7e8;
+            color: #ffffff;
+        }

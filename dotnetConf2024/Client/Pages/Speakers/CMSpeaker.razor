@@ -1,0 +1,26 @@
+﻿@using dotnetConf2024.Shared.Models
+@using dotnetConf2024.Shared.Services
+@inject SpeakerService SpeakerService
+<div class="tab-pane active" id="tabs-1">
+    <div class="schedule-table-content">
+        @*<h2>12/18 社群技術議程</h2>
+        <h4>臺北文創大樓</h4>*@
+        <br />
+        @foreach (var speaker in speakers)
+        {
+            @if (speaker.IsShow)
+            {
+                <ShowSpeaker Speaker="speaker"></ShowSpeaker>
+            }
+        }
+    </div>
+</div>
+
+@code {
+    private IEnumerable<SpeakerModel> speakers;
+
+    protected override async Task OnInitializedAsync()
+    {
+        speakers = SpeakerService.GetSpeakers().Where(p => p.Tags.Contains("CM"));//.OrderBy(p => p.Name);
+    }
+}

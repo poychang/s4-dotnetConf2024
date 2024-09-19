@@ -1,0 +1,19 @@
+﻿/*---------------------
+  Footer
+-----------------------*/
+
+.sponsor-logo {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #2f3039;
+}
+
+    .sponsor-logo .pl-table {
+        display: inline-block;
+        display: table;
+    }
+
+        .sponsor-logo .pl-table .pl-tablecell {
+            display: table-cell;
+            vertical-align: middle;
+            height: 41px;
+        }

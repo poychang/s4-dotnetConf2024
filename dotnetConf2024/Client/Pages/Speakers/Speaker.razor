@@ -1,0 +1,97 @@
+﻿@using dotnetConf2024.Shared.Models
+@using dotnetConf2024.Shared.Services
+@page "/Speaker"
+
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@implements IDisposable
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h2>講師</h2>
+                    <h4>Speaker</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb Section End -->
+<!-- Speaker Section Begin -->
+<section class="speaker-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h2>即將推出，敬請期待</h2>
+                </div>
+            </div>
+
+            @* <div class="col-lg-12">
+                <div class="speaker-table-tab">
+                    <div class="tab-content">
+                        @if (tabDate.Equals("all") || tabDate.Equals("CM"))
+                        {
+                            <CMSpeaker></CMSpeaker>
+                        }
+                    </div>
+                </div>
+            </div> *@
+        </div>
+    </div>
+</section>
+<!-- Speaker Section End -->
+
+@code {
+    private IEnumerable<SpeakerModel> speakers;
+    private string tabDate = "all";
+
+    protected override async Task OnInitializedAsync()
+    {
+        NavigationManager.LocationChanged += OnLocationChanged;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await ScrollToFragment();
+    }
+
+    public void Dispose()
+    {
+        NavigationManager.LocationChanged -= OnLocationChanged;
+    }
+
+    private async void OnLocationChanged(object sender, LocationChangedEventArgs e)
+    {
+        await ScrollToFragment();
+    }
+
+    private void ChangeTab(string date)
+    {
+        tabDate = date == tabDate ? "all" : date;
+    }
+
+    private async Task ScrollToFragment()
+    {
+        var uri = new Uri(NavigationManager.Uri, UriKind.Absolute);
+        var fragment = uri.Fragment;
+        if (fragment.StartsWith('#'))
+        {
+            // Handle text fragment (https://example.org/#test:~:text=foo)
+            // https://github.com/WICG/scroll-to-text-fragment/
+            var elementId = fragment.Substring(1);
+            var index = elementId.IndexOf(":~:", StringComparison.Ordinal);
+            if (index > 0)
+            {
+                elementId = elementId.Substring(0, index);
+            }
+
+            if (!string.IsNullOrEmpty(elementId))
+            {
+                await JSRuntime.InvokeVoidAsync("BlazorScrollToId", elementId);
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+﻿.blog-item-bg-format {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bi-text-format {
+    bottom: 0px;
+    height: 30%;
+    padding-top: 10px;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    background: rgb(0, 0, 0, 0.6);
+}

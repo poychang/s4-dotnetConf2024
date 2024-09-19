@@ -1,0 +1,36 @@
+﻿/*---------------------
+  Header
+-----------------------*/
+
+.logo {
+    float: left;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.nav-menu .mainmenu ul li a.active:after {
+    opacity: 1;
+}
+
+/*---------------------
+  Home About Section
+-----------------------*/
+
+.ha-text {
+    padding-top: 30px;
+}
+
+/*---------------------
+  Home Contact 
+-----------------------*/
+
+.cs-map {
+    height: auto;
+}
+
+/*---------------------
+  Schedule Section
+-----------------------*/
+.schedule-tab .nav-tabs .nav-item {
+    width: 25%;
+}
