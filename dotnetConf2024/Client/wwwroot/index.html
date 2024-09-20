@@ -73,7 +73,7 @@
             <div class="container">
                 <div class="row">
                     <div class="mx-auto">
-                <div class="lds-ripple"><div></div><div></div></div>
+                        <div class="lds-ripple"><div></div><div></div></div>
                     </div>
                 </div>
             </div>
@@ -85,6 +85,16 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
+
+    <!-- Remove Service Worker -->
+    <script type="text/javascript">
+        navigator.serviceWorker.getRegistrations().then(registrations => {
+            for (const registration of registrations) {
+                registration.unregister();
+            }
+        });
+    </script>
+
     <script src="_framework/blazor.webassembly.js"></script>
 
     <!-- Js Plugins -->
