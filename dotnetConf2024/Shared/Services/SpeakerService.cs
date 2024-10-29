@@ -617,6 +617,25 @@ namespace dotnetConf2024.Shared.Services
                     IsShow = false,
                     Tags = new string[]{ "CM", "HackMD" },
                 },
+                new SpeakerModel {
+                    Id = "KeiLiao",
+                    Name = "Kei Liao",
+                    JobTitle = "<TBD>",
+                    PictureUrl ="./img/speakers/KeiLiao.jpg",
+                    BlogUrl = "",
+                    FacebookUrl = "",
+                    TwitterUrl = "",
+                    LinkedinUrl = "",
+                    Introduction = "<TBD>",
+                    Topic = "<TBD>",
+                    TopicOutline = "<TBD>",
+                    Room = "",
+                    Track = "",
+                    SessionStart = new DateTime(2024, 12, 9, 14, 20, 0),
+                    SessionEnd = new DateTime(2024, 12, 9, 15, 10, 0),
+                    IsShow = true,
+                    Tags = new string[]{ "CM", "HackMD" },
+                }
             };
 
             return speakers;
