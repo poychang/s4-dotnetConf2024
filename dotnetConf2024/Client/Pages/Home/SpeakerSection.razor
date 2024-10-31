@@ -2,6 +2,7 @@
 @using dotnetConf2024.Shared.Services
 @using dotnetConf2024.Shared.Extensions
 @inject SpeakerService SpeakerService
+
 <!-- Team Member Section Begin -->
 <section class="team-member-section">
     <div class="container">
@@ -16,7 +17,7 @@
             </div>
         </div>
     </div>
-    @for (var i = 0; i < 5; i++)
+    @* @for (var i = 0; i < 5; i++)
     {
         <div class="member-item set-bg" style="background-image: url('./img/speakers/!unknow.png')">
             <div class="mi-text">
@@ -24,8 +25,8 @@
                 <span>Coming Soon</span>
             </div>
         </div>
-    }
-    @* @foreach (var speaker in speakers)
+    } *@
+    @foreach (var speaker in speakers)
     {
         @if (speaker.IsShow)
         {
@@ -41,15 +42,18 @@
                 </div>
             </div>
         }
-    } *@
+    }
 </section>
 <!-- Team Member Section End -->
 
 @code {
-    private IEnumerable<SpeakerModel> speakers;
+    private IEnumerable<SpeakerModel> speakers = [];
 
     protected override async Task OnInitializedAsync()
     {
-        speakers = SpeakerService.GetSpeakers().Where(p => p.IsShow).ToList().Shuffle().Take(20);
+        await Task.Run(() =>
+        {
+            speakers = SpeakerService.GetSpeakers().Where(p => p.IsShow).ToList().Shuffle().Take(15);
+        });
     }
 }

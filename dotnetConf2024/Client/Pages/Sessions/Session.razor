@@ -17,34 +17,34 @@
 <section class="schedule-table-section spad">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            @* <div class="col-lg-12">
                 <div class="breadcrumb-text">
                     <h2>即將推出，敬請期待</h2>
                 </div>
-            </div>
+            </div> *@
 
-            @* <div class="col-lg-12">
+            <div class="col-lg-12">
                 <div class="schedule-table-tab">
                     <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item @(tabDate == "1209" ? "active" : "")" @onclick="@(_ => ChangeTab("1209"))">
-                            <a class="nav-link">12/09 社群技術議程</a>
+                        <li class="nav-item @(tabDate == "1214" ? "active" : "")" @onclick="@(_ => ChangeTab("1214"))">
+                            <a class="nav-link">12/14 社群技術議程</a>
                         </li>
-                        <li class="nav-item @(tabDate == "1210" ? "active" : "")" @onclick="@(_ => ChangeTab("1210"))">
-                            <a class="nav-link">12/10 社群技術議程</a>
+                        <li class="nav-item @(tabDate == "1215" ? "active" : "")" @onclick="@(_ => ChangeTab("1215"))">
+                            <a class="nav-link">12/15 社群技術議程</a>
                         </li>
                     </ul><!-- Tab panes -->
                     <div class="tab-content">
-                        @if (tabDate.Equals("all") || tabDate.Equals("1209"))
+                        @if (tabDate.Equals("all") || tabDate.Equals("1214"))
                         {
-                            <S1209></S1209>
+                            <S1214></S1214>
                         }
-                        @if (tabDate.Equals("all") || tabDate.Equals("1210"))
+                        @if (tabDate.Equals("all") || tabDate.Equals("1215"))
                         {
-                            <S1210></S1210>
+                            <S1215></S1215>
                         }
                     </div>
                 </div>
-            </div> *@
+            </div>
         </div>
     </div>
 </section>
