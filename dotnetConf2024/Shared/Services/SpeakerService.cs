@@ -74,7 +74,7 @@ namespace dotnetConf2024.Shared.Services
                     TwitterUrl = "",
                     LinkedinUrl = "",
                     Introduction = "現任職於大型軟體開發團隊的架構師，負責核心產品的服務化，與內部產品開發團隊的架構改善等任務。在過去的 20 年工作經驗，主要都專注於 Microsoft .NET Framework 開發 SaaS , B2B2C 的雲端服務。我專長的領域包括: 軟體工程，物件導向設計，分散式系統架構設計，平行處理，API 設計 及 微服務導向架構設計 (microservices) 等。<br/>我樂於分享技術新知與開發的經驗，常在各大研討會或是在社群活動上分享經驗。同時我也有撰寫部落格文章的習慣，希望能累積我的經驗給需要的夥伴們。我深信知識是越分享越精進的，這也是支持我自 2004 至今連續 20 年不間段分享文章的動力來源。<br/>個人經歷:<br/>- 現任 91APP, 首席架構師 Chief Architect<br/>- 榮獲 Microsoft MVP 微軟最有價值專家 獎項,2016 ~ 2025<br/>- 擔任多次 Microsoft Azure Cafe, TechDays, TechEd, DevOpsDays Taiwan, .NET Conf 等大型研討會講者，與相關 Azure PaaS 雲端系列課程與企業內訓講師<br/>https://columns.chicken-house.net/about/",
-                    Topic = ".NET RAG 神器 - Microsoft Kernel Memory 的應用 (暫定)",
+                    Topic = ".NET RAG 神器 - Microsoft Kernel Memory 的應用",
                     TopicOutline = "1. RAG 基本觀念<br/>2. Kernel Memory Service 介紹<br/>3. Hello, Kernel Memory<br/>4. 搭配 No Code Platform - DIFY 的進階應用",
                     Room = "",
                     Track = "",
