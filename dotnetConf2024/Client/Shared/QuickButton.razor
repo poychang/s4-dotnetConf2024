@@ -1,16 +1,17 @@
 ﻿<span>
     @if (isActivate)
     {
-        if (new DateTime(2024, 12, 10).CompareTo(DateTime.Now) > 0)
+        if (new DateTime(2024, 12, 15).CompareTo(DateTime.Now) > 0)
         {
             // 售票期間導向到售票平台
             <a href="https://study4-tw.kktix.cc/events/dotnetconf2024" target="_blank" class="primary-btn top-btn"><i class="fa fa-ticket"></i> 報名參加</a>
         }
-        else
+        @* else
         {
             // 活動期間導向到共筆平台
             <a href="https://hackmd.io/@@Study4/dotnetconf-2024" target="_blank" class="primary-btn top-btn"><i class="fa fa-pencil-square-o"></i> 大會共筆</a>
-        }
+            <a href="https://study4-tw.kktix.cc/events/dotnetconf2024" target="_blank" class="primary-btn top-btn"><i class="fa fa-ticket"></i> 錯過現場，還有回放</a>
+        } *@
     }
     else
     {
