@@ -655,6 +655,25 @@ namespace dotnetConf2024.Shared.Services
                     SessionEnd = new DateTime(2024, 12, 15, 0, 0, 0),
                     IsShow = true,
                     Tags = new string[]{ "CM", "HackMD" },
+                },
+                new SpeakerModel {
+                    Id = "JrtingShiau",
+                    Name = "蕭晊莛",
+                    JobTitle = "Technical Manager",
+                    PictureUrl ="./img/speakers/Jrting Shiau.jpg",
+                    BlogUrl = "",
+                    FacebookUrl = "",
+                    TwitterUrl = "",
+                    LinkedinUrl = "",
+                    Introduction = "目前任職於新加坡商鈦坦科技，擔任 Technical Manager",
+                    Topic = "API 協議選擇之道：REST、gRPC、GraphQL 如何匹配需求？",
+                    TopicOutline = "本講題將以循序漸進的方式，深入解析 REST、gRPC、GraphQL 三大 API 協議的核心特性，探討它們的優缺點，並結合現代微服務架構的需求，分享如何在不同場景中選擇最適合的解決方案。",
+                    Room = "",
+                    Track = "",
+                    SessionStart = new DateTime(2024, 12, 14, 0, 0, 0),
+                    SessionEnd = new DateTime(2024, 12, 15, 0, 0, 0),
+                    IsShow = true,
+                    Tags = new string[]{ "CM", "HackMD" },
                 }
             };
 
