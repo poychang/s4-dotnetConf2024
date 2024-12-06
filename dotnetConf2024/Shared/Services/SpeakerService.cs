@@ -544,7 +544,7 @@ namespace dotnetConf2024.Shared.Services
                 new SpeakerModel {
                     Id = "EvanceKao",
                     Name = "Evance Kao",
-                    JobTitle = "91APP 資深後端工程師",
+                    JobTitle = "",
                     PictureUrl ="./img/speakers/Evance Kao.jpg",
                     BlogUrl = "",
                     FacebookUrl = "",
