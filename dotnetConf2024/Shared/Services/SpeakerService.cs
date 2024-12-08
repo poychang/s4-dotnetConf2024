@@ -1,4 +1,4 @@
-﻿using dotnetConf2024.Shared.Models;
+using dotnetConf2024.Shared.Models;
 
 namespace dotnetConf2024.Shared.Services
 {
@@ -609,7 +609,7 @@ namespace dotnetConf2024.Shared.Services
                     TwitterUrl = "",
                     LinkedinUrl = "",
                     Introduction = "前某義大利餐廳行政主廚，曾於兩間台灣金流界龍頭任職，也曾擔任過某電子支付公司研發部主管，現為 Geek & Nerd Studios CEO 喜歡協助客戶完成技術導入，對他而言程式就跟料理一樣 keep learning, keep your knife sharpen。",
-                    Topic = "在 Azure 上 building 與 scalling cloud-native 的智慧型app",
+                    Topic = "在 Azure 上 building 與 scaling cloud-native 的智慧型app",
                     TopicOutline = "了解如何在 Azure 上透過 Azure Kubernetes Service 和 Azure Container Apps 運行cloud-native 的 serverless  和container 應用程式",
                     Room = "",
                     Track = "",
