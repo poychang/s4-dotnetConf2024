@@ -51,7 +51,7 @@ namespace dotnetConf2024.Shared.Services
                     JobTitle = "Microsoft Regional Director",
                     PictureUrl ="./img/speakers/Edward Kuo.jpg",
                     BlogUrl = "https://profile.edwardkuo.dev/",
-                    FacebookUrl = "https://www.facebook.com/groups/286316594814216/",
+                    FacebookUrl = "https://www.facebook.com/EdwardKuo.Teched",
                     TwitterUrl = "",
                     LinkedinUrl = "",
                     Introduction = "用不同觀點看待軟體開發流程，具有超過十年以上開發者經驗與技術。熱愛技術也喜愛探索商業需求，在需求與技術槓桿中選擇合適的解決方案。專注於雲端架構設計與開發、供應鏈系統設計、ML/ AI、資訊安全和DevOps解決方案，擔任DevOps相關研討會、企業 DevOps 講師以及微軟技術研討會之講師",
